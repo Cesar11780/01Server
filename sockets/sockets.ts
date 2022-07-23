@@ -2,7 +2,7 @@ import SocketIO, {Socket } from 'socket.io'
 import socketIO from 'socket.io'
 import { Usuario } from '../classes/usuario';
 import { UsuariosLista } from '../classes/usuarios-lista'
-
+// creacion de los eventos Socket y primer evento escuchado
 export const usuariosConectados = new UsuariosLista();
 
 export const conectarCliente = ( cliente: Socket ) => {
